@@ -68,9 +68,13 @@ This product enables a 20% reduction in operational expenses, unlocking margin e
 
  Dockerized deployment for enterprise adoption
 
+ ---
+
 📜 License
 
 Released under MIT License. See LICENSE
+
+---
 .
 
 ✨ Built to prove that words are code, and culture is infrastructure.
