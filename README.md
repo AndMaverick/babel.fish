@@ -46,4 +46,13 @@ python babel_fish.py --input "Our product reduces costs by 20%." --lang en --con
 
 ---
 
+```
 ## 📊 Sample Output
+```bash
+Our product reduces costs by 20%.
+
+Unser Produkt senkt die Kosten um zwanzig Prozent.
+
+Notre produit fait baisser les coûts de 20 %. Pas mal, non ?
+
+This product enables a 20% reduction in operational expenses, unlocking margin expansion opportunities.
