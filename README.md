@@ -81,13 +81,11 @@ Released under the [MIT License](LICENSE).
 
 <hr>
 
-<p style="font-size:30px;">🔥 🎤 🚀 💖 🧩 🌐 💎 ✨ 💥</p>
+<p style="font-size:28px;">💎 ✨ 🏛️ ✨ 💎</p>
 
-<b style="font-size:24px; font-family:monospace; color:#ff0055;">
-AndMaverick // Built Different
-</b>
+<b style="font-size:22px; font-family:serif;">AndMaverick — Architect of Chaos & Clarity</b>
 
-<p style="font-size:30px;">💥 ✨ 💎 🌐 🧩 💖 🚀 🎤 🔥</p>
+<p style="font-size:28px;">💎 ✨ 🏛️ ✨ 💎</p>
 
 <hr>
 
