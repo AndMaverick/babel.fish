@@ -80,13 +80,22 @@ Released under the [MIT License](LICENSE).
 ---
 
 
-<p align="center">
+<div align="center">
 
-💎✨🚀🔥💖🌐🔥🚀✨💎 <br>
-<b>AndMaverick — Architect of Chaos & Clarity</b> <br>
-💎✨🚀🔥💖🌐🔥🚀✨💎
+<hr>
 
+<p style="font-size:20px;">
+💎 ✨ 🚀 🔥 💖 🌐 🔥 🚀 ✨ 💎  
 </p>
 
+<b>AndMaverick — Architect of Chaos & Clarity</b>
+
+<p style="font-size:20px;">
+💎 ✨ 🚀 🔥 💖 🌐 🔥 🚀 ✨ 💎  
+</p>
+
+<hr>
+
+</div>
 
 
