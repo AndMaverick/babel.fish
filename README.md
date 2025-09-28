@@ -77,6 +77,8 @@ Released under the [MIT License](LICENSE).
 
 ✨ *Built to prove that words are code, and culture is infrastructure.*  
 
+---
+
 <p align="center">
 💎 ✨ 🏛️ ✨ 💎 <br>
 <b>AndMaverick — Ars ex Machina</b> <br>
