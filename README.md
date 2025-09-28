@@ -77,29 +77,23 @@ Released under the [MIT License](LICENSE).
 
 ✨ *Built to prove that words are code, and culture is infrastructure.*  
 
-<div align="center">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100" viewBox="0 0 800 100">
+  <rect width="100%" height="100%" fill="black"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+        font-family="monospace" font-size="28" fill="#00FF00" filter="url(#glow)">
+    AndMaverick — Built Different
+  </text>
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+</svg>
 
-<hr>
-
-<p style="font-size:20px; font-family:monospace;">
-<span style="color:#39ff14;">▇▇▇</span> 
-<span style="color:#ff3131;">▇▇▇</span> 
-<span style="color:#39c5bb;">▇▇▇</span>
+<p align="center">
+  <img src="andmaverick-signoff.svg" alt="AndMaverick — Built Different" />
 </p>
-
-<b style="font-size:22px; font-family:monospace;">
-<span style="color:#39ff14;">AndMaverick</span> — 
-<span style="color:#ff3131;">Signal</span> > 
-<span style="color:#39c5bb;">Noise</span>
-</b>
-
-<p style="font-size:20px; font-family:monospace;">
-<span style="color:#39c5bb;">▇▇▇</span> 
-<span style="color:#ff3131;">▇▇▇</span> 
-<span style="color:#39ff14;">▇▇▇</span>
-</p>
-
-<hr>
-
-</div>
-
