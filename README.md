@@ -82,7 +82,7 @@ Released under the [MIT License](LICENSE).
 
 <p align="center">
   💖 🚀 💖 🚀 💖 <br>
-  <b>AndMaverick — Built Different</b> <br>
+  <b>AndMaverick — Always Be Curious</b> <br>
   💖 🚀 💖 🚀 💖
 </p>
 
