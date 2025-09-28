@@ -19,7 +19,7 @@
 - [Roadmap](#-roadmap)
 - [License](#-license)
 
-
+--- 
 ## 🧭 What is Babel.Fish?  
 Most systems can translate. Few can adapt.  
 
