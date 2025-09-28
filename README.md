@@ -81,8 +81,11 @@ Released under the [MIT License](LICENSE).
 
 
 <p align="center">
-  💖 🚀 💖 🚀 💖 <br>
-  <b>AndMaverick — Always Be Curious</b> <br>
-  💖 🚀 💖 🚀 💖
+
+✨💎🌐💎✨ <br>
+<b>⚡ AndMaverick — Architect of Chaos & Clarity ⚡</b> <br>
+✨💎🌐💎✨
+
 </p>
+
 
