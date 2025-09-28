@@ -56,3 +56,21 @@ Unser Produkt senkt die Kosten um zwanzig Prozent.
 Notre produit fait baisser les coûts de 20 %. Pas mal, non ?
 
 This product enables a 20% reduction in operational expenses, unlocking margin expansion opportunities.
+
+```
+🗺 Roadmap
+
+ Add Spanish 🇪🇸 and Mandarin 🇨🇳 support
+
+ Pre-trained “style packs” (law, marketing, startup pitch)
+
+ Web-based demo with copy/paste interface
+
+ Dockerized deployment for enterprise adoption
+
+📜 License
+
+Released under MIT License. See LICENSE
+.
+
+✨ Built to prove that words are code, and culture is infrastructure.
