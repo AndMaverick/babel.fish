@@ -43,3 +43,7 @@ python babel_fish.py --input "Our product reduces costs by 20%." --lang fr --ton
 
 # Investor English output
 python babel_fish.py --input "Our product reduces costs by 20%." --lang en --context investor
+
+---
+
+## 📊 Sample Output
