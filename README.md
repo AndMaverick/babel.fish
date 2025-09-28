@@ -77,23 +77,26 @@ Released under the [MIT License](LICENSE).
 
 ✨ *Built to prove that words are code, and culture is infrastructure.*  
 
----
-
-
 <div align="center">
 
 <hr>
 
-<p style="font-size:20px; color:#00ffcc; font-family:monospace;">
-[ ■ ■ ■ ■ ■ ]
+<p style="font-size:20px; font-family:monospace;">
+<span style="color:#39ff14;">▇▇▇</span> 
+<span style="color:#ff3131;">▇▇▇</span> 
+<span style="color:#39c5bb;">▇▇▇</span>
 </p>
 
-<b style="font-size:20px; color:#00ffcc; font-family:monospace;">
-AndMaverick — Signal > Noise
+<b style="font-size:22px; font-family:monospace;">
+<span style="color:#39ff14;">AndMaverick</span> — 
+<span style="color:#ff3131;">Signal</span> > 
+<span style="color:#39c5bb;">Noise</span>
 </b>
 
-<p style="font-size:20px; color:#00ffcc; font-family:monospace;">
-[ ■ ■ ■ ■ ■ ]
+<p style="font-size:20px; font-family:monospace;">
+<span style="color:#39c5bb;">▇▇▇</span> 
+<span style="color:#ff3131;">▇▇▇</span> 
+<span style="color:#39ff14;">▇▇▇</span>
 </p>
 
 <hr>
