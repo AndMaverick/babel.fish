@@ -82,10 +82,11 @@ Released under the [MIT License](LICENSE).
 
 <p align="center">
 
-✨💎🌐💎✨ <br>
-<b>⚡ AndMaverick — Architect of Chaos & Clarity ⚡</b> <br>
-✨💎🌐💎✨
+💎✨🚀🔥💖🌐🔥🚀✨💎 <br>
+<b>AndMaverick — Architect of Chaos & Clarity</b> <br>
+💎✨🚀🔥💖🌐🔥🚀✨💎
 
 </p>
+
 
 
