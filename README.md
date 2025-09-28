@@ -80,7 +80,9 @@ Released under the [MIT License](LICENSE).
 ---
 
 
-
-💖 🚀 💖 🚀 💖   AndMaverick — Built Different   💖 🚀 💖 🚀 💖
-
+<p align="center">
+  💖 🚀 💖 🚀 💖 <br>
+  <b>AndMaverick — Built Different</b> <br>
+  💖 🚀 💖 🚀 💖
+</p>
 
