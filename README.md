@@ -84,16 +84,19 @@ Released under the [MIT License](LICENSE).
 
 <hr>
 
-<p style="font-size:28px;">
-🔥 💎 ✨ 🚀 💖 🌐 💎 ✨ 🚀 💖 🔥  
+<p style="font-size:20px; color:#00ffcc; font-family:monospace;">
+[ ■ ■ ■ ■ ■ ]
 </p>
 
-<b style="font-size:22px;">AndMaverick — Architect of Chaos & Clarity</b>
+<b style="font-size:20px; color:#00ffcc; font-family:monospace;">
+AndMaverick — Signal > Noise
+</b>
 
-<p style="font-size:28px;">
-🔥 💎 ✨ 🚀 💖 🌐 💎 ✨ 🚀 💖 🔥  
+<p style="font-size:20px; color:#00ffcc; font-family:monospace;">
+[ ■ ■ ■ ■ ■ ]
 </p>
 
 <hr>
 
 </div>
+
