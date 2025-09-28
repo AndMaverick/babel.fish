@@ -77,16 +77,8 @@ Released under the [MIT License](LICENSE).
 
 ✨ *Built to prove that words are code, and culture is infrastructure.*  
 
-<div align="center">
-
-<hr>
-
-<p style="font-size:28px;">💎 ✨ 🏛️ ✨ 💎</p>
-
-<b style="font-size:22px; font-family:serif;">AndMaverick — Architect of Chaos & Clarity</b>
-
-<p style="font-size:28px;">💎 ✨ 🏛️ ✨ 💎</p>
-
-<hr>
-
-</div>
+<p align="center">
+💎 ✨ 🏛️ ✨ 💎 <br>
+<b>AndMaverick — Ars ex Machina</b> <br>
+💎 ✨ 🏛️ ✨ 💎
+</p>
