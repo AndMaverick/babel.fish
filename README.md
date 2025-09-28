@@ -42,6 +42,18 @@ This isn’t “word swap translation.” It’s **cultural calibration.**
 
 ---
 
+## 🚀 Getting Started
+
+Clone the repo and install dependencies:
+
+```bash
+pip install -r requirements.txt
+
+python babel_fish.py
+
+pip install -r requirements-dev.txt
+
+
 ## ⚡ Example Usage  
 ```bash
 # Formal German output
