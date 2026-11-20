@@ -14,7 +14,7 @@ Most systems can translate. Few can adapt, and almost none can prove the result 
 
 Babel.Fish does two jobs. It builds a precise instruction for any language model: who the reader is, which form of address to use, what the context demands, which terms are fixed. Then it checks what comes back with a deterministic verifier and, when the check fails, sends the model the exact problems and asks again. A translation that changes "20 %" into "25 %", drops a placeholder, answers in the wrong language, or switches from "Sie" to "du" does not get through quietly.
 
-Standard library only. Python 3.10 to 3.13. Works with any OpenAI-compatible server (including local ones) and with the Anthropic Messages API.
+Standard library only. Python 3.10 to 3.13. Works with any OpenAI compatible server (including local ones) and with the Anthropic Messages API.
 
 ## Install and run
 
@@ -56,7 +56,7 @@ Exit code 0 means no errors, 1 means the text has errors, 2 means the input coul
 | --- | --- |
 | Numbers | A figure that changed or went missing. Numbers are compared by value across conventions, so "1,200,000" in English and "1.200.000" in Spanish match, and number words from two to one hundred are understood ("twenty" equals "20", "zwanzig" equals "20"). |
 | Dates and times | Compared as sets of integers, so "2026-03-15" and "15.03.2026" and "15/03/2026" agree and "16.03.2026" does not. |
-| Protected spans | Placeholders such as `{name}`, `%s`, URLs and e-mail addresses are masked before the model sees them and put back afterwards. If one is lost, that is an error. |
+| Protected spans | Placeholders such as `{name}`, `%s`, URLs and email addresses are masked before the model sees them and put back afterwards. If one is lost, that is an error. |
 | Untranslated output | The model returned the source unchanged. |
 | Wrong language | The reply is identifiably in another language. |
 | Refusals and preambles | "I'm sorry, I cannot translate this", "Here is the translation:" and similar. |
@@ -93,7 +93,7 @@ Backends are small and replaceable: `OpenAICompatible(model, base_url)`, `Anthro
 
 ## What was measured
 
-`python examples/evaluate.py` runs the verifier on a hand-written parallel corpus (20 English sentences with formal German, French and Spanish translations, informal variants and wrong-terminology variants). Nothing in it calls a model.
+`python examples/evaluate.py` runs the verifier on a handwritten parallel corpus (20 English sentences with formal German, French and Spanish translations, informal variants and wrong terminology variants). Nothing in it calls a model.
 
 ```text
 clean translations flagged with an error: 0 of 60
@@ -116,12 +116,12 @@ CI runs this on every push, along with 52 unit tests (a local HTTP server stands
 
 ## Honest limits
 
-- **The corpus is small and written by one person.** Zero false alarms on 60 correct translations is a real result and a modest one. Treat it as evidence the checks are not trigger-happy, not as a guarantee on your text.
-- **Language identification needs words.** Six of the 60 correct translations were returned as "unknown" (short sentences or sentences made mostly of numbers), so a wrong-language reply to such a sentence is not caught: 54 of 60. It never called a correct translation the wrong language in the corpus. It abstains instead of guessing.
+- **The corpus is small and written by one person.** Zero false alarms on 60 correct translations is a real result and a modest one. Treat it as evidence the checks are not trigger happy, not as a guarantee on your text.
+- **Language identification needs words.** Six of the 60 correct translations were returned as "unknown" (short sentences or sentences made mostly of numbers), so a wrong language reply to such a sentence is not caught: 54 of 60. It never called a correct translation the wrong language in the corpus. It abstains instead of guessing.
 - **Register checks are word lists.** They catch "du" where "Sie" was required. They say nothing about whether the prose is elegant or idiomatic.
-- **Number words are understood from two to one hundred.** Larger spelled-out numbers are not compared. Digits are compared at any size.
+- **Number words are understood from two to one hundred.** Larger spelled out numbers are not compared. Digits are compared at any size.
 - **Dates are compared as sets of integers.** A swapped day and month ("03.04" for "04.03") is not caught.
-- **This does not measure translation quality.** It checks that what must not change did not change and that what was asked for is present. Whether a particular model writes a pitch that persuades a Parisian creative director is a question for people who read French. No live-model result is claimed here, because none was run.
+- **This does not measure translation quality.** It checks that what must not change did not change and that what was asked for is present. Whether a particular model writes a pitch that persuades a Parisian creative director is a question for people who read French. No live model result is claimed here, because none was run.
 
 ## Layout
 
