@@ -1,32 +1,14 @@
-import os
-from openai import OpenAI
+# babel_fish.py
+# Launcher: kept so that "python babel_fish.py --input ... --lang de --tone formal" still works. The code lives in the babel_fish/ package.
+# Babel.Fish: from translation to true cultural fluency.
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+import sys
 
-STYLE_PROMPTS = {
-    "default": "Translate naturally.",
-    "law": "Translate formally, with precise legal terminology.",
-    "marketing": "Translate persuasively, as if writing ad copy.",
-    "pitch": "Translate boldly, like a startup pitch deck."
-}
-
-def babel_fish(text: str, lang: str, style: str = "default") -> str:
-    style_prompt = STYLE_PROMPTS.get(style, STYLE_PROMPTS["default"])
-    
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[
-            {"role": "system", "content": f"You are a translator. {style_prompt} Translate into {lang}."},
-            {"role": "user", "content": text}
-        ]
-    )
-    return response.choices[0].message.content.strip()
+from babel_fish import babel_fish  # noqa: F401  (the original one-call function, still importable from here)
+from babel_fish.cli import main
 
 if __name__ == "__main__":
-    with open("example.txt", "r", encoding="utf-8") as f:
-        text = f.read()
-    print("Original:", text)
-    print("---")
-    print("German / Marketing Style:\n", babel_fish(text, "de", "marketing"))
-    print("---")
-    print("French / Legal Style:\n", babel_fish(text, "fr", "law"))
+    if len(sys.argv) < 2:
+        print("Usage: python babel_fish.py --input \"Our product reduces costs by 20%.\" --lang de --tone formal")
+        sys.exit(2)
+    sys.exit(main(sys.argv[1:]))

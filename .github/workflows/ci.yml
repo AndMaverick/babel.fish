@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Unit tests
+        run: python -m unittest discover -s tests -t . -v
+      - name: Verify a good translation exits 0
+        run: python -m babel_fish verify --source examples/source.txt --output examples/de_good.txt --to de --tone formal
+      - name: Verify a wrong number exits 1
+        run: |
+          set +e
+          python -m babel_fish verify --source examples/source.txt --output examples/de_wrong_number.txt --to de --tone formal > /dev/null
+          test "$?" -eq 1
+      - name: Verify a wrong register exits 1
+        run: |
+          set +e
+          python -m babel_fish verify --source examples/source.txt --output examples/de_wrong_register.txt --to de --tone formal > /dev/null
+          test "$?" -eq 1
+      - name: Missing file exits 2
+        run: |
+          set +e
+          python -m babel_fish verify --source nope.txt --output nope.txt --to de 2> /dev/null
+          test "$?" -eq 2
+      - name: Original launcher still imports
+        run: python -c "import babel_fish; print(babel_fish.babel_fish)"
+      - name: Verification figures
+        run: python examples/evaluate.py
+
+  quality:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install ruff mypy
+      - run: ruff check .
+      - run: mypy

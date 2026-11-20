@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "babel.fish"
+version = "0.2.0"
+description = "Cultural calibration for translation: tone and context profiles, protected spans, any LLM backend, and a deterministic verifier for numbers, dates, placeholders, language, register and terminology. Dependency-free Python."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "AndMaverick LLC" }]
+
+[project.scripts]
+babel-fish = "babel_fish.cli:main"
+
+[tool.setuptools.package-data]
+babel_fish = ["py.typed"]
+
+[tool.setuptools.packages.find]
+include = ["babel_fish*"]
+
+[tool.ruff]
+line-length = 130
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "C4", "SIM"]
+ignore = ["E501"]
+
+[tool.mypy]
+strict = true
+files = ["babel_fish"]
